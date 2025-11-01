@@ -1,0 +1,88 @@
+/* === COLORES === */
+.text-pink {
+    color: #8B4513; /* marrón suave */
+}
+
+/* === BOTONES === */
+.btn-pink {
+    background-color: #d4a373; /* marrón claro */
+    color: white;
+    border: 2px solid #8B4513;
+    transition: 0.3s;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn-pink:hover {
+    background-color: #e3b97e; /* naranja suave */
+    color: #3b2f2f;
+    transform: scale(1.05);
+}
+
+/* === TITULO MARRÓN === */
+.titulo-rosa {
+    color: #a0522d;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.titulo-rosa:hover {
+    transform: scale(1.05);
+    color: #c97f4a;
+}
+
+/* === HERO TEXTOS === */
+#hero p {
+    font-weight: bold;
+    color: #3b2f2f;
+}
+
+/* === TARJETAS CON BORDE DE NUBE === */
+.nube-card {
+    background-color: #fffaf2;
+    border-radius: 50px 50px 80px 80px / 50px 50px 100px 100px;
+    border: 2px solid #8B4513;
+    transition: all 0.3s ease;
+}
+
+.nube-card:hover {
+    background-color: #f8e0c7;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* === NAVBAR === */
+header {
+    background-color: #fffaf2 !important;
+    border-bottom: 2px solid #8B4513;
+}
+
+.navbar .nav-link {
+    color: #5c4033 !important;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #d2691e !important;
+}
+
+/* === SEPARADOR ENTRE SECCIONES === */
+.section-divider {
+    border-top: 3px solid #8B4513;
+    width: 80%;
+    margin: 60px auto;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+/* === FOOTER === */
+footer {
+    border-top: 2px solid #8B4513;
+    background-color: #fffaf2;
+}
+
+footer p {
+    color: #5c4033;
+}

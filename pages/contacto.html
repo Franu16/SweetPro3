@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Stars Store - Contacto</title>
+  <link rel="icon" href="../img/logopag.ico">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* 🌸 PALETA DE COLORES */
+    :root {
+      --marron-claro: #d8bca1; /* fondo principal */
+      --crema: #fef5ea;        /* fondo crema de recuadros */
+      --rosa: #e75480;         /* rosa principal igual que el index */
+      --rosa-hover: #ff7ca3;   /* rosa más suave al pasar el mouse */
+      --borde-negro: #000;     /* color del borde del formulario */
+    }
+
+    /* === FONDO GENERAL === */
+    body {
+      background-color: var(--marron-claro); /* fondo marrón claro */
+      color: #2c2c2c;
+    }
+
+    /* === NAVBAR IGUAL AL INDEX === */
+    .navbar {
+      background-color: #fff; /* fondo blanco igual que el index */
+      border-bottom: 2px solid #f0bbcb; /* línea decorativa rosa pálido */
+    }
+
+    .navbar-brand {
+      color: var(--rosa) !important;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: var(--rosa) !important; /* rosa por defecto */
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #000 !important; /* negro al pasar el puntero */
+    }
+
+    .nav-link:active,
+    .nav-link:focus {
+      color: var(--rosa) !important; /* mantiene rosa al hacer clic */
+    }
+
+    /* === ENCABEZADO === */
+    header {
+      background-color: var(--crema); /* fondo crema suave */
+      border-bottom: 2px solid var(--borde-negro);
+    }
+
+    /* === TARJETA DEL FORMULARIO === */
+    .card {
+      background-color: var(--crema); /* fondo crema claro */
+      border: 3px solid var(--borde-negro); /* borde negro visible */
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+    }
+
+    /* === BOTÓN === */
+    .btn-success {
+      background-color: #a77c58; /* marrón medio para contraste */
+      border: none;
+      font-weight: bold;
+    }
+
+    .btn-success:hover {
+      background-color: #8d6746;
+      transform: scale(1.03);
+    }
+
+    /* === FOOTER === */
+    footer {
+      background-color: var(--crema);
+      border-top: 2px solid var(--borde-negro);
+      color: #000;
+    }
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: #704a2f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Barra de navegación (igual que el index) -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../img/logo-removebg-preview.png" alt="Logo Sweet" width="45" class="me-2">
+        <span class="fw-bold text-pink fs-4">Sweet</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="producto.html">Tienda</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Encabezado -->
+  <header class="text-center py-5 text-dark">
+    <h1 class="fw-bold">📩 Contactanos</h1>
+    <p class="lead">Envianos tu mensaje.</p>
+  </header>
+
+  <!-- 🔹 Contenedor principal -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+
+      <!-- Formulario de contacto -->
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4">
+          <h4 class="mb-4 text-center">Formulario de Contacto</h4>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Enviar</button>
+          </form>
+        </div>
+
+        <!-- Información adicional de contacto -->
+        <div class="mt-4 text-center">
+          <h5>Correo de nuestros integrantes:</h5>
+          <p>Torres Francesca: <a href="mailto:toresfrancesca94@gmail.com">toresfrancesca94@gmail.com</a></p>
+          <p>Eva Bustamante: <a href="mailto:elenabustamante765@gmail.com">elenabustamante765@gmail.com</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔹 Footer -->
+  <footer class="text-center py-3">
+    <p class="mb-0">Sweet — Desarrollado por Torres Francesca y Eva Bustamante.</p>
+  </footer>
+
+  <!-- Bootstrap + JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 🔹 JavaScript para el formulario -->
+  <script>
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      alert(`Gracias por contactarnos, ${name}! \nRecibimos tu mensaje:\n"${message}" \nNos pondremos en contacto a ${email}.`);
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
